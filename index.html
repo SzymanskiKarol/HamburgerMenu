@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap'); </style>
+    <link rel="icon" href="/images/FlowerLogo.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Hamburger Menu</title>
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo" src="/images/logo-removebg-preview.png" alt="">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+<script>
+const mobileNav = document.querySelector("ul");
+const burgerIcon = document.querySelector(".burger");
+
+burgerIcon.addEventListener('click', function(){
+    mobileNav.classList.toggle('active');
+    burgerIcon.classList.toggle('active');
+})
+</script>
+</body>
+</html>
